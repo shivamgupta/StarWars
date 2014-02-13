@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView android:id="@+id/mainMenuImage"
+    	android:src="@drawable/star_wars_main"  
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent">
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+    
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnExit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/starfighterstartbtn" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignRight="@+id/btnStart"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/starfighterexitbtn" />
+
+   </RelativeLayout>
